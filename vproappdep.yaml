@@ -29,11 +29,11 @@ spec:
               "-c",
               "until nslookup vprodb.default.svc.cluster.local; do echo waiting for mydb; sleep 2; done;",
             ]
-        - name: init-memcache
-          image: busybox
-          command:
-            [
-              "sh",
-              "-c",
-              "until nslookup vprocache01.default.svc.cluster.local; do echo waiting for mydb; sleep 2; done;",
-            ]
+        # - name: init-memcache
+        #   image: busybox
+        #   command:
+        #     [
+        #       "sh",
+        #       "-c",
+        #       "until nslookup vprocache01.default.svc.cluster.local; do echo waiting for mydb; sleep 2; done;",
+        #     ]
